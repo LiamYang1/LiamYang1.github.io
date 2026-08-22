@@ -26,22 +26,22 @@ author:
   avatar           : "profile.png"
   name             : "Liam"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Here are some basic information of myself."
   location         : "Earth"
-  employer         : "Red Brick University"
+  employer         : "Tsinghua University"
   uri              : # URL
   email            : "yangzuyi22@mails.tsinghua.edu.cn" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : 
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : 
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : 
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
@@ -57,7 +57,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -222,17 +222,21 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
+    output: false
+    permalink: /:collection/:path/
+  blog:
     output: true
     permalink: /:collection/:path/
+
 
 
 # These settings control how pages and collections are included in the site
@@ -240,7 +244,7 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: blog
     values:
       layout: single
       author_profile: true
