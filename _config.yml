@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "handsome.jpg"
   name             : "Liam"
   pronouns         : # example: "she/her"  
   bio              : "Here are some basic information of myself."
@@ -222,29 +222,23 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   teaching:
-    output: false
-    permalink: /:collection/:path/
-  publications:
-    output: false
-    permalink: /:collection/:path/
-  portfolio:
-    output: false
-    permalink: /:collection/:path/
-  talks:
-    output: false
-    permalink: /:collection/:path/
-  blog:
     output: true
     permalink: /:collection/:path/
-
-
-
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
 # These settings control how pages and collections are included in the site
 defaults:
   # _posts
   - scope:
       path: ""
-      type: blog
+      type: posts
     values:
       layout: single
       author_profile: true
